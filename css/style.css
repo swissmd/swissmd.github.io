@@ -1,6 +1,12 @@
 /* my css initial to test link - then remove */
 body {background: red;}
 
+/* hero message */
+.heroHeading {
+  text-align: center;
+  color: red;
+}
+
 
 /* css for hero animated container  - via https://jsfiddle.net/Grobbert/gkder2Lw/2/ */
 /* carousel will only work when page is live */
