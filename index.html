@@ -5,7 +5,7 @@
 
 
 <!-- CSS -->
-	<!-- this link to bootstrap css - and must be placed before own custom css file as per https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+  <!-- this link to bootstrap css - and must be placed before own custom css file as per https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<!-- this is link to normalize.css will makesbrowsers render all elements more consistently as explained here: https://necolas.github.io/normalize.css/ (this is external code) -->
@@ -15,7 +15,15 @@
 
 	 <!-- additinal Bootstrap CSS  for navigation - top header-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
+  <!-- additional css and scripts for carousel (place scriot on top so carousel loads immediately -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
 
 <!-- REQUIRED META -->
@@ -98,6 +106,54 @@
     
   </div>
 <!--     end nav link -->
+
+
+
+<!-- Hero Animated Carousel-->
+<!-- will only function when in live mode -->
+<header>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line"></div>
+                        <h2>Discover Your True Choices</h2>
+                        <h1>Reveal the truth</h1>
+                        <h4>The Key to true answers instantly at your fingertips</h4>
+                    </div>
+                </div>
+             </div>
+        </div>                    
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2017/10/17/19/11/fantasy-2861815_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>Find Your True Purpose</h2>
+                        <h1>Achieve true greatness</h1>
+                        <h4>Develop automatic confidence when you know you own truth</h4>
+                    </div>
+                </div>
+             </div>
+        </div>                
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2017/07/17/23/51/wormhole-2514312_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>Read Your True Future</h2>
+                        <h1>Gain true insight</h1>
+                        <h4>Expand your Universe with truth on your side.</h4>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</header>
 
 
 
