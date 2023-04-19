@@ -2,7 +2,9 @@
 body {background: red;}
 
 
-/* css for hero container  */
+/* css for hero animated container  - via https://jsfiddle.net/Grobbert/gkder2Lw/2/ */
+/* carousel will only work when page is live */
+
 header .item {
   height: 100vh;
   position: relative;

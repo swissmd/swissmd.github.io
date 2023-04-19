@@ -4,7 +4,8 @@
 console.log("Testing my js link");
 
 
-// script for hero animated carousel
+// script for hero animated carousel via https://jsfiddle.net/Grobbert/gkder2Lw/2/
+// carousel will only work when page is live
 
 $('.owl-carousel').owlCarousel({
     loop:true,
