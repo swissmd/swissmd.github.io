@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
+ <!-- additinal Bootstrap CSS  for navigation - top header-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
 
@@ -47,6 +49,68 @@
 <!-- basic code is: <nav><a href="index.html">Text</a></nav> -->
 
 <p>my content here A</p>
+
+
+
+
+<!--TOP HEADER -->
+
+<!--     container top nav bar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+
+<!--    logo -->  
+<!-- courtesy of https://www.designevo.com/apps/logo/ -->
+  <a class="navbar-brand mr-5" href="#">
+    <img src="./images/truth-teller-nav-logo-1.jpg" alt="Truth Teller" >
+  </a>
+    
+<!--    responsive button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#container_nav" aria-controls="container_nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!--   nav link -->
+  <div class="collapse navbar-collapse" id="container_nav">
+    
+<!--     left sided navigation -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item  px-1">
+        <a class="nav-link text-dark" href="#">WHAT</a>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#">HOW</a>
+      </li>
+
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#" >WHEN</a>
+      </li>
+
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#" >WHERE</a>
+      </li>
+      
+      
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#" >WHY</a>
+      </li>
+    </ul>
+    
+  
+    
+    <!--     right sided navigation  (later implement with different styling) -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item  px-2">
+        <a class="nav-link text-dark" href="#">TEST</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link text-dark" href="#">SPECIAL</a>
+      </li>
+    </ul>
+    
+    
+  </div>
+<!--     end nav link -->
 
 
 <!-- 
@@ -102,11 +166,24 @@
 
 <!-- CSS animated hero place here rirst to test -->
 
-
+<!-- SCRIPTS -->
+<!-- keep scripts at very bottom of body to improve loading speeds as recommended -->
 
 <!-- this script links to bootstrap js- and must be placed before own custom js file-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- keep this script.js file at very bottom of body to improve loading speeds as recommended -->
+
+<!--this scrpt enables burger menu / collapse nagivation - courtesy of pencode bootsrtap nav bar basic (jQuery first, then Popper.js, then Bootstrap JS )-->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+<!-- this is for any additional custom script -->
 <script src="js/script.js"></script>
+
+
 </body>
 </html>
