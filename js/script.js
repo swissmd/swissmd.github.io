@@ -3,7 +3,28 @@
 //this is to test if js file is linked properly... it will show on chrome if you select console by   View / Developer / Developer Tools … it gives white tabs like Console (and Elements)
 console.log("Testing my js link");
 
-// this is common practive to use LOAD event to sllow proprt visiotr browser setting
-window.addEventListener("load", (function){console.log("page is fully loaded"); const h2 = document.querySelector (“h2”); console.log (h2)
+
+// script for hero animated carousel
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:true,
+    mouseDrag:false,
+    autoplay:true,
+    animateOut: 'slideOutUp',
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
 });
+
 
