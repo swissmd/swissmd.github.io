@@ -1,9 +1,8 @@
-/* my css initial to test link - then remove */
-body {background: red;}
 
 /* hero message */
-.heroHeading {
+p.heroHeading {
   text-align: center;
+  font-weight: bold;
   color: red;
 }
 
