@@ -4,7 +4,7 @@
 console.log("Testing my js link");
 
 // this is common practive to use LOAD event to sllow proprt visiotr browser setting
-window.addEventListener("load", (function) {
+window.addEventListener("load", (function){
   console.log("page is fully loaded"); const h2 = document.querySelector (“h2”); console.log (h2)
 });
 
