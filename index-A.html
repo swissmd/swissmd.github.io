@@ -3,19 +3,29 @@
 <head>
 <!-- boilerplate starter template for this website loacted in working-notes folder under same project (ideal to create initial new pages.... afterwards use a customized template for actual website with proper navigation, footer, etc established)-->
 
+
+<!-- REQUIRED META -->
+
+  <!-- begin set meta data from sublime text starter shell- typing in html+tab then select html (file needs to be saved in order to be functional) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- RECOMMENDED META -->
+  <!-- include custom meta data (seo/robots)  - to be added later -->
+
+
+
+<!-- CSS -->
   <!-- this link to bootstrap css - and must be placed before own custom css file as per https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- this is link to normalize.css will makesbrowsers render all elements more consistently as explained here: https://necolas.github.io/normalize.css/ (this is external code) -->
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <!-- this is my ciustom css link -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- this is link to normalize.css will makesbrowsers render all elements more consistently as explained here: https://necolas.github.io/normalize.css/ (this is external code) -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- this is my ciustom css link -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
-
-
-
-
-
+    <!-- additional css and scripts for carousel (place scriot on top so carousel loads immediately -->
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -26,22 +36,30 @@
 
 
 
-  <!-- begin set meta data from sublime text starter shell- typing in html+tab then select html (file needs to be saved in order to be functional) -->
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- include custom meta data (seo/robots)-->
+	 <!-- additinal Bootstrap CSS  for navigation - top header-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-<!-- class project via bootsrap versus ealier version like Rover -->  
-  <title>v!. Include a Title</title>
+
+
+ 
+
+
+
+
+<!-- MASTER PROJECT REFERENCE -->	
+<!-- class project via bootsrap versus ealier version like Rover -->
+	
+	<title>v.7 TRUTH TELLER</title>
 </head>
 
 
 <body>
-<!-- start muy content -->  
+<!-- start my content --- REMOVE BELOW BODY STYLE IF LATER DOES NOT WORK WELL VISUALLY  (keep bopth now) -->	
+ <body style="background: goldenrod;">
 
+
+<!--TOP HEADER -->
 <section>
 <!--     container top nav bar -->
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -100,21 +118,17 @@
   </div>
 
  </section>
-
-<!--NAVIGATION-->
-<!-- decide if duplicating navigation on every page is desired -->
-<!-- basic code is: <nav><a href="index.html">Text</a></nav> -->
-
-<p>my content here A</p>
+  
+<!--     end nav link -->
 
 
-<!-- 
-  Bootstrap docs: https://getbootstrap.com/docs
--->
 
+<!-- Hero Animated Carousel-->
+<!-- will only function when in live mode -->
 <section>
-
-<header>
+  <P class="heroHeading"> Presenting The Real Truth Teller - All the Anwsers Right at your Fingertips </p>
+  <header>  
+  <div class="container">
     <div class="owl-carousel owl-theme">
         <div class="item">
             <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
@@ -122,7 +136,7 @@
                 <div class="container">
                     <div class="header-content">
                         <div class="line"></div>
-                        <h2>Discover Your True Choices.</h2>
+                        <h2>Discover Your True Choices</h2>
                         <h1>Reveal the truth</h1>
                         <h4>The Key to true answers instantly at your fingertips</h4>
                     </div>
@@ -156,15 +170,27 @@
              </div>
         </div>
     </div>
+</div>
+</div>
 </header>
-
 </section>
 
 
 
+<!-- SCRIPTS -->
+<!-- keep scripts at very bottom of body to improve loading speeds as recommended -->
+
 <!-- this script links to bootstrap js- and must be placed before own custom js file-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- keep this script.js file at very bottom of body to improve loading speeds as recommended -->
+
+<!--this scrpt enables burger menu / collapse nagivation - courtesy of pencode bootsrtap nav bar basic (jQuery first, then Popper.js, then Bootstrap JS )-->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+<!-- this is for any additional custom script -->
 <script src="js/script.js"></script>
 </body>
 </html>
