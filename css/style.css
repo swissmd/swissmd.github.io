@@ -11,10 +11,19 @@ p.heroHeading {
   text-align: center;
   font-weight: bold;
   color: goldenrod;
+  text-trasnform: capitalize;
 }
 
-/* css for explanation */
+/* css for topic */
+h2.toptopic {
+  color: goldenrod;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+h2.topic {
+  color: goldenrod;
+}
 
 /* css for testimontial */
 
