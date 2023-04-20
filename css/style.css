@@ -1,11 +1,22 @@
 
-/* hero message */
+/* css for top navigation*/
+/* this inline styling did npot work, neither this css */
+
+.nav-link {color: red;
+}
+
+
+/* css for hero message */
 p.heroHeading {
   text-align: center;
   font-weight: bold;
-  color: red;
+  color: goldenrod;
 }
 
+/* css for explanation */
+
+
+/* css for testimontial */
 
 /* css for hero animated container  - via https://jsfiddle.net/Grobbert/gkder2Lw/2/ */
 /* carousel will only work when page is live */

@@ -3,11 +3,14 @@
 <head>
 <!-- boilerplate starter template for this website loacted in working-notes folder under same project (ideal to create initial new pages.... afterwards use a customized template for actual website with proper navigation, footer, etc established)-->
 
+
   <!-- this link to bootstrap css - and must be placed before own custom css file as per https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- this is link to normalize.css will makesbrowsers render all elements more consistently as explained here: https://necolas.github.io/normalize.css/ (this is external code) -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <!-- this is my ciustom css link -->
+
+
+  <!-- this is my custom css link -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
@@ -67,7 +70,8 @@
     
 <!--     left sided navigation -->
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item  px-1">
+
+      <li class="nav-item px-1">
         <a class="nav-link text-dark" href="#">WHAT</a>
       </li>
       <li class="nav-item px-1">
@@ -89,7 +93,7 @@
     </ul>
     
     
-    <!--     right sided navigation  (later implement with different styling) -->
+    <!--     right sided navigation  (later implement with different inline styling) -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item  px-2">
         <a class="nav-link text-dark" href="#">TEST</a>
@@ -163,12 +167,26 @@
 </section>
 
 
-
+<section>
+<div class="container explnation">
+  <div class="row">
+    <div class="col">type here</div>
+  </div>
+  <div class="row">
+    <div class="col-8">text</div>
+    <div class="col-4">text</div>
+  </div>
+  <div class="row">
+    <div class="col">text</div>
+  </div>
+</div>   
+</section>  
 
 
 
 <!-- this script links to bootstrap js- and must be placed before own custom js file-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 <!-- keep this script.js file at very bottom of body to improve loading speeds as recommended -->
 <script src="js/script.js"></script>
 </body>
