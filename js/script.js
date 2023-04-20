@@ -31,6 +31,5 @@ $('.owl-carousel').owlCarousel({
 
 // this is common practice to use LOAD event to show proper visitor browser setting
 window.addEventListener('load', function() {
-      alert('Hi!');
     });
 
