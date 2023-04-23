@@ -259,15 +259,66 @@
     </div>
     <hr>
 
-<!-- SIMPLE FOOTER -->
-<!-- to be refractored - see working notes files for complex footer -->)
+  <!-- COMPLEX FOOTER CONTAINER 
+(started with flex box... adaptation refractoring courtesy of https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-multi-level-sticky-footer-with-flexbox--cms-33341 -->  
 
-<div>
-.simple {
-   Flex-direction: row
-}
-
-</div>
+  <hr>
+    <div class="container"></div>
+    <footer>
+      <!-- main footer -->
+      <section class="ft-main">
+        <div class="ft-main-item">
+          <h2 class="ft-title">About</h2>
+          <ul>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Featured On</h2>
+          <ul>
+            <li><a href="#">Cosmopolitan</a></li>
+            <li><a href="#">Science Edu</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Contact</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Direct</a></li>
+          </ul>
+        </div>
+         <div class="ft-main-item">
+          <h2 class="ft-title">Resources</h2>
+          <h4>Subscribe for further tips to get the truth anytime, anywhere</h4>
+          <form>
+            <input type="email" name="email" placeholder="Enter email address">
+            <input type="submit" value="Subscribe">
+          </form>
+        </div>
+      </section>
+    
+      <!-- Footer social -->
+      <section class="ft-social">
+        <ul class="ft-social-list">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </section>
+    
+      <!-- Footer legal -->
+      <section class="ft-legal">
+        <ul class="ft-legal-list">
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li>&copy; 2023 Millennium Inc.</li>
+        </ul>
+      </section>
+    </footer>
+    <hr>
 
 
 
