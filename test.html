@@ -22,102 +22,76 @@
 <!-- this is my custom css link -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<!-- EXPLANATORY CONTAINER -->
+<!-- FOOTER CONTAINER 
+(started with flex box... adaptation refractoring courtesy of https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-multi-level-sticky-footer-with-flexbox--cms-33341 -->
 
-<!--hero code courtesy of https://web-eau.net/en/blog/examples-header-bootstrap  #9 -->
 
-
+<body>
 
     <hr>
-    <div class="container">
-        <div class="row">
-            <h2 class="toptopic">How does it work</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusamus praesentium eveniet ad unde doloremque ex officia eius ab quibusdam.</p>
+    <body>
+    <div class="container"></div>
+    <footer>
+      <!-- main footer -->
+      <section class="ft-main">
+        <div class="ft-main-item">
+          <h2 class="ft-title">About</h2>
+          <ul>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
         </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-12">
-          <h2 class="topic">What is it</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusamus praesentium eveniet ad unde doloremque ex officia eius ab quibusdam.</p>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Featured On</h2>
+          <ul>
+            <li><a href="#">Cosmopolitan</a></li>
+            <li><a href="#">Science Edu</a></li>
+          </ul>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-           <h2 class="topic">When can I use it</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, mollitia natus amet eligendi consequuntur. Veritatis ullam debitis voluptas repellat laboriosam.</p>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Contact</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Direct</a></li>
+          </ul>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-           <h2 class="topic">Where is it best</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, error, itaque non vel architecto ratione obcaecati doloribus delectus illum harum?</p>
+         <div class="ft-main-item">
+          <h2 class="ft-title">Resources</h2>
+          <h4>Subscribe for further tips to get the truth anytime, anywhere</h4>
+          <form>
+            <input type="email" name="email" placeholder="Enter email address">
+            <input type="submit" value="Subscribe">
+          </form>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <h2 class="topic">Why should you care</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nam voluptate accusantium nulla distinctio odit aliquam voluptatem ab. Earum.</p>
-         </div>
-          <div class="row">
-            <h2 class="toptopic">Get Yours Now</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusamus praesentium eveniet ad unde doloremque ex officia eius ab quibusdam.</p>
+      </section>
     
-        </div>
-      </div>
-    </div>
+      <!-- Footer social -->
+      <section class="ft-social">
+        <ul class="ft-social-list">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </section>
+    
+      <!-- Footer legal -->
+      <section class="ft-legal">
+        <ul class="ft-legal-list">
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li>&copy; 2023 Millennium Inc.</li>
+        </ul>
+      </section>
+    </footer>
     <hr>
 
+    <!-- ATACH THIS CSS WHEN REFRACTORIMG-->
 
 
 
-<section>
-<div class="container explnation">
-  <div class="row">
-    <div class="col">type here</div>
-  </div>
-  <div class expl="row">
-    <div class="col-4">text</div>
-    <div class="col-4">text</div>
-    <div class="col-4">text</div>
-    <div class="col-4">text</div>
-  </div>
-  <div class="row">
-    <div class="col">text</div>
-  </div>
-</div>   
-</section>  
 
-    
-
-<section>
-<div class="container">
-  <div class="row">
-    <div class="col">type here</div>
-  </div>
-  <div class="row">
-    <div class="col-8">text</div>
-    <div class="col-4">text</div>
-  </div>
-  <div class="row">
-    <div class="col">text</div>
-  </div>
-</div>   
-</section>    
-
-
-<section>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 red">6 cols md and above</div>
-    <div class="col-md-6 red">6 cols md and above</div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3 blue">3 cols sm and above</div>
-    <div class="col-sm-3 blue">3 cols sm and above</div>
-    <div class="col-sm-3 blue">3 cols sm and above</div>
-    <div class="col-sm-3 blue">3 cols sm and above</div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4 orange">4 cols lg and above</div>
-    <div class="col-lg-4 orange">4 cols lg and above</div>
-    <div class="col-lg-4 orange">4 cols lg and above</div>
-  </div>
-</div>
-</section>
     
     
     
