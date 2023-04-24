@@ -33,19 +33,7 @@ h2.topic {
   color: goldenrod;
 }
 
-p.primary {
-  text-align: center;
-  font-weight: bold;
-}
-
-p.testimonial {
-  font-style: italic;
-  font-weight: lighter;
-}
-
-
 /* css for testimontial */
-
 
 /* css for hero animated container  - via https://jsfiddle.net/Grobbert/gkder2Lw/2/ */
 /* carousel will only work when page is live */
