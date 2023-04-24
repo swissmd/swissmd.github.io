@@ -39,13 +39,15 @@ p.primary {
   
 }
 
+
+/* css for testimontial */
+
 p.testimonial {
   font-style: italic;
   font-weight: lighter;
 }
 
 
-/* css for testimontial */
 
 
 /* css for hero animated container  - via https://jsfiddle.net/Grobbert/gkder2Lw/2/ */
