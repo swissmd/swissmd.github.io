@@ -1,10 +1,5 @@
 
 /* css for images and to assure images are responsive  - with a max*/
-.responsive {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
 
 .center-img {
   display: block;
@@ -12,6 +7,12 @@
   margin-right: auto;
   margin-bottom: 20px;
 }
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 
 
 
