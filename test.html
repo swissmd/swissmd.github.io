@@ -1,75 +1,127 @@
-<!--this is private file for testing code first-->
-
-
-
-
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+<!-- boilerplate starter template for this website loacted in working-notes folder under same project (ideal to create initial new pages.... afterwards use a customized template for actual website with proper navigation, footer, etc established)-->
 
-    <!-- this link to bootstrap css - and must be placed before own custom css file as per https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+
+<!-- CSS -->
+  <!-- this link to bootstrap css - and must be placed before own custom css file as per https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- this is link to normalize.css will makesbrowsers render all elements more consistently as explained here: https://necolas.github.io/normalize.css/ (this is external code) -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-
-<!-- above shrink-to-fit=no is specifc for Safari ... will not use irt myself-->
-
-
-
-
-
-
-
-<!-- this is my custom css link -->
+  <!-- this is my ciustom css link -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+   
 
-
-
-<!-- footer - with flex -->
-
-<section class="footerFlex">
-  <div class="footerNav">
-    <p class=nf>2023 Copyright <br> Millennium  Inc.<br> Products for Peronsal Power</p> 
-  </div>
-  <div class="footerNav">
-    <p class=nf><a href="https://www.cosmopolitan.com/lifestyle/a37234650/how-to-use-a-pendulum/">As Featured On</a></p>
-    <a href="https://www.cosmopolitan.com/lifestyle/a37234650/how-to-use-a-pendulum/"><img src="images/cosmopolitan-logo.jpg" alt="Cosmopolitan" class="responsive"/></a>
-  </div>
-  <div class="footerNav">
-    <p class=nf><a href="">About Us</a></p>
-  </div>
-   <div class="footerNav">
-     <p class=nf><a href="mailto:info@millenniumppp.com">Contact</a></p>
-  </div>
-</section>
+  <!-- additinal Bootstrap CSS  for navigation - top header-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
 
 
+ <!-- additional css and scripts for carousel (place scriot on top so carousel loads immediately -->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+
+<!-- REQUIRED META -->
+
+  <!-- begin set meta data from sublime text starter shell- typing in html+tab then select html (file needs to be saved in order to be functional) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"-->
+
+<!-- RECOMMENDED META -->
+  <!-- include custom meta data (seo/robots)  - to be added later -->
+
+
+<!-- MASTER PROJECT REFERENCE --> 
+<!-- class project via bootsrap versus ealier version like Rover -->
+  
+  <title>test TRUTH TELLER</title>
+</head>
+
+
+<body>
 
 
 
+<!--TOP HEADER -->
 
- 
+<!--     container top nav bar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
 
+<!--    logo -->
+  <a class="navbar-brand mr-5" href="#">
+    <img src="./images/truth-teller-nav-logo-1.jpg" alt="Truth Teller" >
+    </a>
+    
+<!--    responsive button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#container_nav" aria-controls="container_nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+<!--   nav link -->
+  <div class="collapse navbar-collapse" id="container_nav">
+    
+<!--     left sided navigation -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item  px-1">
+        <a class="nav-link text-dark" href="#">WHAT</a>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#">HOW</a>
+      </li>
 
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#" >WHEN</a>
+      </li>
 
-
-
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#" >WHERE</a>
+      </li>
+      
+      
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#" >WHY</a>
+      </li>
+    </ul>
+    
+  
+    
+    <!--     right sided navigation  (later implement with different styling) -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item  px-2">
+        <a class="nav-link text-dark" href="#">TEST</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link text-dark" href="#">SPECIAL</a>
+      </li>
+    </ul>
     
     
-    
+  </div>
+<!--     end nav link -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+<!-- SCRIPTS -->
+<!-- keep scripts at very bottom of body to improve loading speeds as recommended -->
+
+<!-- this script links to bootstrap js- and must be placed before own custom js file-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!--this scrpt enables burgert menu / collapse nagivation - courtesy of pencode bootsrtap nav bar basic (jQuery first, then Popper.js, then Bootstrap JS )-->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- this is for any additional custom script -->
+<script src="js/script.js"></script>
+</body>
 </html>
