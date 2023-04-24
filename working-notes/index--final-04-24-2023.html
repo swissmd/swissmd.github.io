@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <!-- begin set meta data from sublime text starter shell- typing in html+tab then select html (file needs to be saved in order to be functional) -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+<!-- boilerplate starter template for this website loacted in working-notes folder under same project (ideal to create initial new pages.... afterwards use a customized template for actual website with proper navigation, footer, etc established)-->
+
+
+  <!-- this link to bootstrap css - and must be placed before own custom css file as per https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- this is link to normalize.css will makesbrowsers render all elements more consistently as explained here: https://necolas.github.io/normalize.css/ (this is external code) -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+  <!-- additinoal Bootstrap CSS  for navigation - top header-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--this scrpt enables burgert menu / collapse nagivation - courtesy of pencode bootsrtap nav bar basic (jQuery first, then Popper.js, then Bootstrap JS )-->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <!-- this is my custom css link -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+  
+
+  <!-- include custom meta data (seo/robots)-->
+
+
+
+
+
+
+
+ <!-- additional css and scripts for carousel (place scriot on top so carousel loads immediately -->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+
+
+<!-- class project via bootsrap versus ealier version like Rover --> 
+
+  <title>Pocket Truth Teller Answers All Your Questions... Truthfully</title>
+
+</head>
+
+
+<body>
+
+
+<!--NAVIGATION-->
+<!-- decide if duplicating navigation on every page is desired -->
+<!-- basic code is: <nav><a href="index.html">Text</a></nav> -->
+
+<section>
+
+<!--     container top nav bar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+
+<!--LOGO-->  
+<!-- courtesy of https://www.designevo.com/apps/logo/ -->
+  <a class="navbar-brand mr-5" href="/index.html">
+    <img src="./images/truth-teller-nav-logo-1.jpg" alt="Truth Teller" >
+  </a>
+    
+<!-- responsive button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#container_nav" aria-controls="container_nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!-- nav link -->
+  <div class="collapse navbar-collapse" id="container_nav">
+    
+<!-- left sided navigation -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#what">WHAT</a>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#how">HOW</a>
+      </li>
+
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#when" >WHEN</a>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#where" >WHERE</a>
+      </li>   
+      <li class="nav-item px-1">
+        <a class="nav-link text-dark" href="#why" >WHY</a>
+      </li>
+    </ul>
+    
+    
+    <!-- right sided navigation  (later implement with different inline styling) -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item  px-2">
+        <a class="nav-link text-dark" href="#test">TRUTH</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link text-dark" href="#special">SPECIAL</a>
+      </li>
+    </ul>
+    
+    </div>
+  </div>
+
+</nav>
+</section>
+
+
+<!-- hero alert -->
+
+<p class="heroHeading">THE TRUTH REVEALED - The Pocket Truth Teller - Providing you All the Answers Right Away </p>
+
+
+<!-- Hero Animated Carousel-->
+<!-- will only function when in live mode -->
+<!--hero code courtesy of https://web-eau.net/en/blog/examples-header-bootstrap  #9 -->
+
+<section>
+
+<header>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line"></div>
+                        <h2>Discover Your True Choices</h2>
+                        <h1>Reveal the truth</h1>
+                        <h4>The Key to true answers instantly at your fingertips</h4>
+                    </div>
+                </div>
+             </div>
+        </div>                    
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2017/10/17/19/11/fantasy-2861815_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>Find Your True Purpose</h2>
+                        <h1>Achieve true greatness</h1>
+                        <h4>Develop automatic confidence when you know you own truth</h4>
+                    </div>
+                </div>
+             </div>
+        </div>                
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2017/07/17/23/51/wormhole-2514312_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>Read Your True Future</h2>
+                        <h1>Gain true insight</h1>
+                        <h4>Expand your Universe with truth on your side</h4>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</header>
+
+</section>
+
+
+<!-- topic section explaining product -->
+
+    <hr>
+    <div class="container">
+        <div class="row">
+            <h2 id="what" class="toptopic">What is it</h2>
+          <p class="primary"> Owning your own Pocket Truth Teller is like having a compass to guide you in the right direction.<br> Holding this hand-held device, and formulating the right question, will present you with the correct response. 
+            </p>
+        </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 id="how" class="topic">How does it work</h2>
+          <p> Just as radios pick up information from unseen radio waves, the Pocket Truth Teller serves as a powerful antenna that receives information from the vibrations and energy waves emitted by people, places, thoughts and things. The Pocket Truth Teller helps you get true answers and find your way to true happiness employing the ancient art of pendulum dowsing that has also been called "divining" for its ability to provide information and predict the future. </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+           <h2 id="when" class="topic">When can I use it</h2>
+          <p>Practical to use anytime as selected by The American Academy of Science, The Academy of Sciences of Paris, The Canadian Ministry of Agriculture, The British Academy of Science, The British Army, The Smithsonian Institution, The U.S. Marines, The former Soviet Union, The Government of the Netherlands, The United Nations Educational, Scientific and Cultural Organization, National Aeronautics and Space Administration and many private and public utilities workers throughout the world.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+           <h2 id="where" class="topic">Where is it best</h2>
+          <p>You can get the right answers anywhere as the unique shape of The Pocket Truth Teller is the secret to its extra power that allows you to excel in all your questions.  It has been reviewed by the leading trade journal as "the most responsive". While the inner-workings of the Pocket Truth Teller may be complex, it evidently is able to answer questions that logical reason could not - and soon you will experience how the Pocket Truth Teller gives you answers you can trust all the time.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 id="why" class="topic">Why care</h2>
+          <p>Benefit from knowing the Truth! It is an amazing sight to see the Pocket Truth Teller swinging at such precision when a moment before it was hanging still, and all you did was ask a question. This is "Pendulum Power"in action. Now is the rigth time for you to start saving countless amounts of money, not to mention time and energy, - as you no longer have the pain of agonizing over correct choices and true decisions. </p>
+         </div>
+          <div class="row">
+            <h2 class="toptopic">Get Yours Now</h2>
+            <img src="images/all-the-right-anwsers.jpg" alt="Truth Teller" class="responsive center-img"/>
+          <p class="primary">Owning your own Pocket Truth Teller is an assurance that every answer you get is an answer you can trust. <br> And instead of getting it for its regular price of  USD $47.00, you can get yours for only $29.95... and I will include illustrated instructions that allow you to immediately get the right answers to any question.</p>
+<!-- add paypal button and center by adding style="display: block; margin: 0 auto;" on image line between input and type -->
+<!--29.95-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="5B9TKRW6X9QQY" />
+  <input type="hidden" name="currency_code" value="USD" />
+  <input style="display: block; margin: 0 auto;" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+</form>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+ <!-- testimonial section --> 
+
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 class="topic">Amazing</h2>
+          <p class="testimonial">"My GOD! Already I would be blind without this and it has just been 24hrs. I was blind and now I see. Amazing Grace!!! This is as important or even more important than the computer. Leaving the house without it in your pocket would be like leaving the house with no clothes once you have experienced it."</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+           <h2 class="topic">Love it</h2>
+          <p class="testimonial">I love my beautiful [Pocket Truth Teller]... I find that I get the clearest, most accurate results. All of my friends agree that it is an excellent tool.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+           <h2 class="topic">Skeptical</h2>
+          <p class="testimonial">"I am really intrigued and quite frankly amazed with this new discovery. I must admit, I was skeptical. Your product looked great and your presentation was very informative and insightful. Your instructions are very precise and to the point."</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 class="topic">Friend For Life</h2>
+          <p class="testimonial">"I was extremely sceptical but felt for the money involed I had nothing to lose. I've never seen anything like it. I must admit I was a bit spooked because I'd assumed you had to give it some momentum to get it going....not at all. BOB [The Pocket Truth Teller] is now a friend for life"</p>
+         </div>
+          <div class="row">
+            <h2 id="special" class="toptopic">Special Offer</h2>
+             <img src="images/pocket.jpg" alt="Truth Teller" class="responsive center-img"/>
+          <p class="primary">Buy 2 + Get 1 FREE one for the office, one to lend out, the perfect gift.  <br> So instead paying  3 x $47 = $141 you will get 3 Pocket Truth Tellers for only $59 Includes and we will include FREE tips that will have you the find whole truth and nothing but the truth. </p> 
+<!-- add paypal button and center by adding style="display: block; margin: 0 auto;" on image line between input and type -->
+<!--59.90-->
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="Z2AQ28F3TVCVJ" />
+  <input type="hidden" name="currency_code" value="USD" />
+  <input style="display: block; margin: 0 auto;" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+</form>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+<!-- teaser & test section --> 
+    <hr>
+    <div class="container">
+        <div class="row">
+            <h2 id="test" class="toptopic">GOT Questions – Get True Answers</h2>
+          <p class="primary">Feeling lost? Looking for Love ?  Want more money?  Happy at home?  Feeling Good? <br> The Pocket Truth Teller can help you find your way to your true happiness. </p>
+        <!-- future jquery let me guess the color ... be more specifc-->
+
+        </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 class="topic">True Love</h2>
+          <p>Ask Questions Like: Is this person honest?  Is this a good relationship for me?  Is this person truly available? Would this be a good time to visit with family?</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+           <h2 class="topic">True Wellbeing</h2>
+          <p>Ask Questions Like: Is this the best doctor for me? Are there chemicals or pesticides in this food? Is this a good diet for me? </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+           <h2 class="topic">True Direction</h2>
+           <p>Ask Questions Like: Is this the best place for me to travel at this time? Is this the best choice for me? Is this the best thing for me to buy?</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 class="topic">True Purpose</h2>
+          <p>Ask Questions Like: Should I say yes/no to this offer? Am I resisting ________ because of fear?  Is this the best intention to set to accomplish my goals?</p>
+         </div>
+          <div class="row">
+            <h2 class="toptopic">FREE SHIPPING</h2>
+             <img src="images/answer-any-question.jpg" alt="Truth Teller" class="responsive center-img"/>
+            <p class="primary">I want you to be able to receive true answers, <br>
+              and I also want you to experience the peace, confidence and trust that comes from getting the right answer to any question anytime, anywhere. <br> Satisfaction Guaranteed and if you order now you also get free shipping anywhere in the USA</p>
+<!-- add paypal button and center by adding style="display: block; margin: 0 auto;" on image line between input and type -->
+<!--59.90-->
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="Z2AQ28F3TVCVJ" />
+  <input type="hidden" name="currency_code" value="USD" />
+  <input style="display: block; margin: 0 auto;" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+</form>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+<!-- SIMPLE FOOTER -->
+<!-- to be refactored - see working notes files for complex footer -->
+
+<!-- footer - with flex -->
+
+<section class="footerFlex">
+  <div class="footerNav">
+    <p class=nf>© 2023 Millennium</p> 
+  </div>
+  <div class="footerNav">
+    <p class=nf><a href="https://www.cosmopolitan.com/lifestyle/a37234650/how-to-use-a-pendulum/">As Featured On</a></p>
+    <a href="https://www.cosmopolitan.com/lifestyle/a37234650/how-to-use-a-pendulum/"><img src="images/cosmopolitan-logo.jpg" alt="Cosmopolitan" class="responsive"/></a>
+  </div>
+  <div class="footerNav">
+    <p class=nf><a href="about.html">About</a></p>
+  </div>
+   <div class="footerNav">
+     <p class=nf><a href="mailto:info@millenniumppp.com">Contact</a></p>
+  </div>
+</section>
+
+
+
+<!-- this script links to bootstrap js- and must be placed before own custom js file-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+<!-- keep this script.js file at very bottom of body to improve loading speeds as recommended -->
+<script src="js/script.js"></script>
+</body>
+</html>
