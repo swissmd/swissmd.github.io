@@ -1,17 +1,18 @@
 
-/* css to assure images are responsive  - with a max*/
+/* css for images and to assure images are responsive  - with a max*/
 .responsive {
   width: 100%;
   max-width: 400px;
   height: auto;
 }
 
-
-/* css for top navigation*/
-/* this inline styling did npot work, neither this css */
-
-.nav-link {color: red;
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
+
 
 
 /* css for hero message */
